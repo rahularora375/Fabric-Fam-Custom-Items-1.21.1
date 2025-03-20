@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "famcustomitems",
+	"version": "${version}",
+	"name": "Fam Custom Items",
+	"description": "Custom items mod for fam by rahularora375",
+	"authors": [
+		"rahularora375"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/rahularora375/fabric-fam-custom-items"
+	},
+	"license": "MIT",
+	"icon": "assets/famcustomitems/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"github.rahularora375.famcustomitems.FamCustomItems"
+		],
+		"fabric-datagen": [
+			"github.rahularora375.famcustomitems.FamCustomItemsDataGenerator"
+		],
+		"client": [
+			"github.rahularora375.famcustomitems.FamCustomItemsClient"
+		]
+	},
+	"mixins": [
+		"famcustomitems.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
